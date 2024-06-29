@@ -14,6 +14,7 @@ class WeatherData {
   });
 
   factory WeatherData.fromJson(Map<String, dynamic> json) {
+
     return WeatherData(
       date: DateTime.fromMillisecondsSinceEpoch(
         json['dt'] * 1000,

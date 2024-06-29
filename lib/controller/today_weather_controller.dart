@@ -43,8 +43,10 @@ class TodayWeatherController {
       final double? lat = _locationData!.latitude;
       final double? lon = _locationData!.longitude;
       // TODO: add Await to each function here to get the number print in the order
-      WeatherData? weatherData = await _fetchAndSetWeatherData(apiKey, lat, lon);
-      ForecastData? forecastData = await _fetchAndSetForcastingData(apiKey, lat, lon);
+      WeatherData? weatherData =
+          await _fetchAndSetWeatherData(apiKey, lat, lon);
+      ForecastData? forecastData =
+          await _fetchAndSetForcastingData(apiKey, lat, lon);
 
       print('4');
 
@@ -59,7 +61,8 @@ class TodayWeatherController {
       if (e.code == 'PERMISSION_DENIED') {
         message = 'Permission denied';
       } else if (e.code == 'PERMISSION_DENIED_NEVER_ASK') {
-        message = 'Permission denied - please ask the user to enable it from the app settings';
+        message =
+            'Permission denied - please ask the user to enable it from the app settings';
       }
 
       _locationData = null;

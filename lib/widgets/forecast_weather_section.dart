@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:today_weather/models/forecast_data.dart';
 import 'package:today_weather/widgets/Weather.dart';
 
-class ForecaseWeaterSection extends StatelessWidget {
+class ForeCaseWeatherSection extends StatelessWidget {
   final ForecastData? forecastData;
 
-  const ForecaseWeaterSection({
+  const ForeCaseWeatherSection({
     super.key,
     this.forecastData,
   });

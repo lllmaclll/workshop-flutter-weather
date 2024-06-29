@@ -42,7 +42,7 @@ class _TodayWeatherState extends State<TodayWeather> {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.lightBlue,
         body: SafeArea(
           child: Center(
             child: Column(
@@ -71,7 +71,7 @@ class _TodayWeatherState extends State<TodayWeather> {
                   },
                 ),
                 // TODO: Refactor this section into widgets
-                ForecaseWeaterSection(
+                ForeCaseWeatherSection(
                   forecastData: forecastData,
                 ),
               ],
